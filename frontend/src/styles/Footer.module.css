@@ -1,0 +1,22 @@
+.fter {
+    background-color: #3964e6; 
+    color: white; 
+    padding: 10px;
+    justify-content: space-between; 
+    bottom: 0;
+    position:relative;
+    width: 100%;
+    font-size: 15px;
+}
+
+.social_links {
+    margin-right: 20px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+@media (max-width:415px){
+    .fter {
+        font-size: 13px;
+    }
+}

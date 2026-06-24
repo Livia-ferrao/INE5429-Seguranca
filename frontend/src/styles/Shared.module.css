@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  padding: 10vh 0px 50px 0px;
+}
+
+.height100 {
+  height: 100vh;
+}
+
+.textAlignStart {
+  text-align: start;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.flexEnd {
+  align-self: flex-end;
+}
+
+.smallGap {
+  gap: 0.5rem;
+}
+
+.bigGap {
+  gap: 20px;
+}
+
+.marginTop {
+  margin-top: 1rem;
+}
+
+.marginBottom {
+  margin-bottom: 1rem;
+}
+
+.fontPadding {
+  padding: 0.5rem;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.colorBlue {
+  color: #4169E1;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #4169E1;
+    margin-left: 5px;
+}
+
+.noList {
+  list-style-type: none;
+}
+
+.btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+    background-color: #4169E1;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn > text {
+    color: white;
+}
+
+.btn:hover {
+    background-color: #1E90FF;
+    cursor: pointer;
+}
+
+.btnLogin {
+  width: 300px;
+  height: 40px;
+  background-color: #4169E1;
+  font-size: 15px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btnLogin:hover{
+  background-color: #1E90FF;
+}
+
+.btnVagas {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 15px;
+  background-color: #fff;;
+  font-size: 15px;
+  color: #4169E1;
+  border-radius: 10px;
+  border: 1px solid #4169E1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btnVagas:hover {
+  color: #fff;
+  background-color: #4169E1;
+  cursor: pointer;
+}
+
+.cardHover:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.padding10 {
+  padding: 10px 10px 10px 10px;
+}
+.padding20 {
+  padding: 20px 20px 20px 20px;
+}
+
+.card {
+  background-color: pink;
+}
+
+
+.marginTop{
+  margin-top: 40px;
+}
+
+.textSize12 {
+  font-size: 12px;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.max80vw {
+  max-width: 80vw;
+}

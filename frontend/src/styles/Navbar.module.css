@@ -1,0 +1,149 @@
+.container {
+    /* border: 2px solid red; */
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    padding: 2px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    /* margin-bottom: 200px; */
+  }
+
+
+.c1 {
+    /* border: 2px solid red; */
+    padding: 2px;
+    gap: 10px;
+    margin-left: 60px;
+
+  }
+
+.logo {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+.title_INE {
+    color: #4169E1;
+}
+
+.c2 {
+    /* border: 2px solid #f0f0f0; */
+    border-radius: 15px;
+    padding: 10px;
+    margin-right: 60px;
+}
+
+/* .c2:hover {
+    border: 2px solid #4169E1;
+} */
+
+.ul {
+    list-style: none;
+    gap: 20px;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_link:hover {
+    color: #4169E1;
+}
+
+.toggle_btn {
+    color: #4169E1;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+
+.navbar_btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+    background-color: #4169E1;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* responsividade */
+
+.dropdown_menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 800px;
+    background: rgba(65, 105, 225, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    width: fit-content;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    list-style-type: none;
+}
+
+
+.nav_link_dropdown {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_link_dropdown:hover {
+    color: #4169E1;
+}
+
+.navbar_btn_dropdown {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 15px;
+    background-color: #4169E1;
+    font-size: 15px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 919px) {
+    .nav_link, 
+    .navbar_btn {
+        display: none;
+    }
+
+    .c2 {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: flex;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+
+}

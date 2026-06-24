@@ -1,0 +1,46 @@
+{
+  "name": "estagios_ine",
+  "version": "1.0.0",
+  "description": "\"API para a aplicação estágios INE\"",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlneto/estagios_ine.git"
+  },
+  "keywords": [
+    "api",
+    "node"
+  ],
+  "author": "Mariana Amaral Steffen, Rudolfo Lange Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rlneto/estagios_ine/issues"
+  },
+  "homepage": "https://github.com/rlneto/estagios_ine#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^7.1.0",
+    "helmet": "^7.0.0",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "4.17.20",
+    "mongoose": "^7.5.4",
+    "rate-limiter": "^0.2.0",
+    "swagger-ui-express": "^5.0.0",
+    "xss-clean": "^0.1.4",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1"
+  }
+}

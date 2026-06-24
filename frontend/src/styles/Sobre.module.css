@@ -1,0 +1,55 @@
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #4169E1;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    border: 2px;
+}
+
+.img_card {
+    width: 600px;
+    height: 350px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+.card_text {
+    width: 600px; 
+    height: 350px;
+}
+
+.paragrafo {
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    
+
+    .img_card {
+        height: 200px;
+        width: 100%;
+        margin-top: 130px;
+    }
+
+    .card_text {
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    .cardd {
+        padding: 20px;
+    }
+}

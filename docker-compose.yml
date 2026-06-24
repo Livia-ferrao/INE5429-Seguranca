@@ -1,0 +1,45 @@
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: estagios-db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+      MONGO_INITDB_DATABASE: estagios_ine
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    network_mode: host
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: estagios-backend
+    network_mode: host
+    environment:
+      - PORT=4000
+      - MONGO_URI=mongodb://root:rootpassword@localhost:27017/estagios_ine?authSource=admin
+      - JWT_SECRET=ghp_R9kT2mXvL4nQ8pYwZ6jB3cF5hA1dE7sG0uI
+      - JWT_EXPIRES_IN=30d
+    depends_on:
+      mongodb:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: estagios-frontend
+    network_mode: host
+    depends_on:
+      - backend
+
+volumes:
+  mongo_data:

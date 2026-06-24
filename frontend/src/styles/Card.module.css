@@ -1,0 +1,15 @@
+.card {
+    border: 2px solid black;
+    width: fit-content;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .card:hover{
+    border: 1px solid #4169E1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
